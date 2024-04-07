@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>NYAPPY-猫の健康を考える-</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery-3.6.0.min.js"></script>
+		<script>
+			$(function(){
+				var openButton = $('#nav_icon');
+				var closeButton = $('#nav_icon_close');
+				var target = $('#nav_inner');
+				openButton.on('click',function(){
+					target.slideDown('fast');
+					openButton.css('display','none')
+				});
+				closeButton.on('click',function(){
+					target.slideUp('fast');
+					openButton.css('display','block');
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="inner">
+				<h1>NYAPPY!</h1>
+				<nav>
+					<a href="#" id="nav_icon">
+						<img src="images/nav_icon.png" alt="">
+					</a>
+					<div id="nav_inner">
+						<a href="#" id="nav_icon_close">
+							<img src="images/nav_icon_close.png" alt="">
+						</a>
+						<ul>
+							<li><a href="#">Top</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Topics</a></li>
+							<li><a href="#">Products</a></li>
+							<li><a href="#">Online shop</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section id="home_visual">
+				<span>君とずっと一緒にいたいから</span>
+			</section>
+			<section id="topics">
+				<div class="inner">
+					<h2>Topics<img src="images/neko_nikukyu.png" alt=""></h2>
+					<div class="topics">
+						<ul>
+							<li><a href="#"><time datetime="2022-04-22">2022.04.22</time>お薬を飲ますときに！ペースト状おやつ出ました</a></li>
+							<li><a href="#"><time datetime="2022-02-22">2022.02.22</time>本日はスーパーにゃんこデー！キャンペーン開催します</a></li>
+							<li><a href="#"><time datetime="2022-01-22">2022.01.22</time>NYAPPYの商品がテレビで番組で紹介されました</a></li>
+						</ul>
+						<div id="btn">
+							<p><a class="button" href="#">お知らせ一覧を見る</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="products">
+				<div class="inner">
+					<h2>Products<img src="images/neko_nikukyu.png" alt=""></h2>
+					<div class="food">
+						<div class="food_kind">
+							<h3>Food</h3>
+							<ul>
+								<li><a href="#">ドライフード</a></li>
+								<li><a href="#">ウェットフード</a></li>
+								<li><a href="#">おやつ</a></li>
+							</ul>
+						</div>
+						<figure class="eating_cat">
+							<img src="images/eating_cat.png" alt="">
+						</figure>
+					</div>
+					<div class="toy">
+						<div class="toy_kind">
+							<h3>Toy</h3>
+							<ul>
+								<li><a href="#">一緒に遊ぶ</a></li>
+								<li><a href="#">ひとりで遊ぶ</a></li>
+								<li><a href="#">ヘルスケア</a></li>
+							</ul>
+						</div>
+						<figure class="playing_cat">
+							<img src="images/playing_cat.png" alt="">
+						</figure>
+					</div>
+				</div>
+			</section>
+		</main>
+		<aside>
+			<section id="campaign">
+				<div class="inner">
+					<h2>Campaigne<img src="images/neko_nikukyu.png" alt=""></h2>
+					<div class="campaign">
+						<p>2022.2.22はスーパーにゃんこデー！<br>ご自慢の猫ちゃんを「#NYAPPY猫の日」をつけてInstagramに投稿しよう！<br>抽選でNYAPPY新製品ペースト状おやつをプレゼントします！</p>
+						<figure class="cat_photo1">
+							<img src="images/udeage_cat.png" alt="">
+						</figure>
+						<figure class="cat_photo2">
+							<img src="images/tonbo_cat.png" alt="">
+						</figure>
+					</div>
+				</div>
+			</section>
+		</aside>
+		<footer>
+				<div id="pagetop">
+					<p><a href="#" id="to_top"><img src="images/back_button.png" alt=""></a></p>
+				</div>
+				<div class="company">
+					<p><small>Copyright &copy; NYAPPY All rights reserved.</small></p>
+				</div>
+		</footer>
+	</body>
+</html>
